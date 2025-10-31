@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Contact | Fahim Uddin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="left"><a href="index.html">Fahim Uddin</a></div>
+    <div class="right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="testimony.html">Testimonials</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html" class="active">Contact</a>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Whether you want to collaborate, share ideas, or just say hello, feel free to reach out!</p>
+
+    <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>Connect With Me</h3>
+            <ul>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:udnfahim@gmail.com">udnfahim@gmail.com</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/uddnfahim" target="_blank">LinkedIn</a></li>
+                <li><i class="fab fa-github"></i> <a href="https://github.com/udnfahim" target="_blank">GitHub</a></li>
+                <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/udnfahim" target="_blank">Facebook</a></li>
+                <li>
+                <a href="https://x.com/udnfahim" target="_blank" style="display:flex; align-items:center; gap:5px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#000000">
+                    <path d="M22.693 5.318c0.11-0.156 0.106-0.36-0.012-0.513-0.118-0.153-0.32-0.232-0.515-0.204l-18.938 2.857c-0.18 0.027-0.329 0.162-0.394 0.338-0.066 0.177-0.038 0.373 0.073 0.53l6.48 9.33-6.937 9.287c-0.107 0.145-0.126 0.34-0.049 0.502 0.077 0.162 0.227 0.276 0.403 0.313l18.938 4.5c0.19 0.045 0.392-0.014 0.527-0.146 0.135-0.133 0.205-0.332 0.187-0.532l-2.437-18.818 4.171-6.9z"/>
+                </svg>
+                              X
+                </a>
+                </li>
+                <li><i class="fab fa-discord"></i> 
+                                <a href="http://discordapp.com/users/udnfahim" target="_blank">Discord: udnfahim</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <h3>Send a Message</h3>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Write your message..." rows="6" required></textarea>
+                <button type="submit">Send Message</button>
+                <p class="form-message"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">
+      <a href="index.html" class="footer-logo">&lt;Fahim /&gt;</a>
+    </div>
+    <div class="footer-center">
+      <p>Copyright © 2025 Fahim Uddin</p>
+      <p>Email: <a href="mailto:udnfahim@gmail.com">udnfahim@gmail.com</a></p>
+    </div>
+    <div class="footer-right">
+      <a href="https://github.com/udnfahim" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/uddnfahim" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+</body>
+</html>
