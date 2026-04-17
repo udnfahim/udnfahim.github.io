@@ -1,90 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="antialiased scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Fahim Uddin | System_Protocol v2.0.0</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <title>Projects | Fahim Uddin</title>
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/layout.js" defer></script>
+  <script src="js/engine.js" defer></script>
 </head>
-<body>
-  <nav>
-    <div class="left"><a href="index.html">Fahim Uddin</a></div>
-    <div class="right">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="testimony.html">Testimonials</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-      <button id="theme-toggle">🌙</button>
-    </div>
-  </nav>
+<body class="bg-slate-950 text-slate-300 selection:bg-blue-500/30 overflow-x-hidden font-sans">
 
-  <section>
-    <h2>Projects</h2>
-    <div class="project-cards">
+<main class="relative z-10 max-w-7xl mx-auto px-6 pt-32 lg:pt-48 pb-32">
 
-      <div class="card">
-        <img src="assets/library_management_system.png" alt="Library Management System">
-        <h3>Library Management System (LMS)</h3>
-        <p>
-          A secure, modular full-stack web application built as a university project using Java and Spring Boot. 
-          Features session-based authentication, CRUD operations for books and students, real-time dashboards, 
-          and a responsive UI with Thymeleaf.
+  <header class="reveal mb-24">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-12">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-3 px-3 py-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 backdrop-blur-md mb-8">
+          <span class="flex h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_10px_#3b82f6]"></span>
+          <span class="text-[10px] font-black uppercase tracking-[0.4em] text-blue-400">Production Build v2.0.0 // 2026</span>
+        </div>
+
+        <h1 class="text-6xl md:text-8xl font-black tracking-tighter uppercase mb-8 leading-[0.85] text-white">
+          Architectural <br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-400 to-blue-600 italic">Solutions.</span>
+        </h1>
+
+        <p class="text-xl text-slate-400 border-l-2 border-blue-600/50 pl-6 leading-relaxed">
+          Focusing on scalable backend orchestration, identity management, and secure API design.
         </p>
-          <a href="https://github.com/udnfahim/Library-Management-System---LMS" target="_blank">View on GitHub</a>
       </div>
 
-      <div class="card">
-        <img src="assets/portfolio.jpg" alt="Portfolio Project">
-        <h3>Personal Portfolio</h3>
-        <p>This website itself — a showcase of my design philosophy, logic, and creativity.</p>
-        <a href="https://github.com/udnfahim" target="_blank">View on GitHub</a>
+      <div class="grid grid-cols-2 gap-4 w-full lg:w-72">
+        <div class="p-4 border border-slate-800 bg-slate-900/40 rounded-xl">
+          <p class="text-[8px] font-black text-slate-500 uppercase mb-1">Stack</p>
+          <p class="text-sm font-bold text-white uppercase">Spring Boot</p>
+        </div>
+        <div class="p-4 border border-slate-800 bg-slate-900/40 rounded-xl">
+          <p class="text-[8px] font-black text-slate-500 uppercase mb-1">Focus</p>
+          <p class="text-sm font-bold text-white uppercase">Security</p>
+        </div>
       </div>
-      
-      <div class="card">
-        <img src="assets/payra.jpg" alt="Payra">
-        <h3>Payra</h3>
-        <p>An Urban Task & Expert Collaboration app connecting residents with service providers efficiently.</p>
-        <a href="https://github.com/udnfahim" target="_blank">View on GitHub</a>
-      </div>
-      
-      <div class="card">
-        <img src="assets/student_management_system.png" alt="University Management System">
-        <h3>SEU - University Management System</h3>
-        <p>A desktop app for managing student, faculty, and course information seamlessly.</p>
-        <a href="https://github.com/udnfahim/SEU-University-Management-System" target="_blank">View on GitHub</a>
+    </div>
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+    <div class="reveal group relative flex h-full flex-col rounded-3xl border border-slate-900 bg-slate-900/10 p-6 transition-all duration-500 hover:border-blue-500/20 hover:bg-slate-900/20">
+      <div class="aspect-video overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 relative mb-8">
+        <img src="assets/sthaniyo.png" alt="Sthaniyo" class="w-full h-full object-cover opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+        <div class="absolute bottom-6 left-6">
+          <h3 class="text-3xl font-black text-white uppercase tracking-tighter mb-2">Sthaniyo</h3>
+          <div class="flex gap-2">
+            <span class="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 text-[9px] font-black uppercase">Identity Node</span>
+            <span class="px-2 py-0.5 rounded bg-blue-500/10 border border-blue-500/20 text-blue-500 text-[9px] font-black uppercase">JWT/OTP</span>
+          </div>
+        </div>
       </div>
 
-      
+      <div class="px-2">
+        <p class="text-slate-400 text-sm leading-relaxed mb-8">
+          A centralized citizen service platform using <span class="text-white font-semibold">JWT + OTP</span> dual-factor authentication. Optimized for high-concurrency requests with a Spring Boot backend and React frontend integration.
+        </p>
+        <div class="flex items-center justify-between border-t border-slate-800 pt-6">
+          <div class="flex gap-4">
+            <i class="fa-brands fa-java text-xl text-slate-600 group-hover:text-white transition-colors"></i>
+            <i class="fa-brands fa-react text-xl text-slate-600 group-hover:text-blue-400 transition-colors"></i>
+          </div>
+          <a href="https://github.com/udnfahim" target="_blank" rel="noreferrer" class="text-[10px] font-black uppercase tracking-widest text-blue-500 flex items-center gap-2 hover:text-white transition-all">
+            Build Specs <i class="fas fa-arrow-right text-[8px]"></i>
+          </a>
+        </div>
+      </div>
     </div>
-  </section>
 
-    <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-left">
-      <a href="index.html" class="footer-logo">&lt;Fahim /&gt;</a>
-    </div>
-    <div class="footer-center">
-      <p>Copyright © 2025 Fahim Uddin</p>
-      <p>Email: <a href="mailto:udnfahim@gmail.com">udnfahim@gmail.com</a></p>
-    </div>
-    <div class="footer-right">
-      <a href="https://github.com/udnfahim" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/uddnfahim" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </footer>
+    <div class="reveal group relative flex h-full flex-col rounded-3xl border border-slate-900 bg-slate-900/10 p-6 transition-all duration-500 hover:border-indigo-500/20 hover:bg-slate-900/20">
+      <div class="aspect-video overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 relative mb-8">
+        <img src="assets/library_management_system.png" alt="Library Management System" class="w-full h-full object-cover opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+        <div class="absolute bottom-6 left-6">
+          <h3 class="text-3xl font-black text-white uppercase tracking-tighter mb-2">Registry Core</h3>
+          <div class="flex gap-2">
+            <span class="px-2 py-0.5 rounded bg-blue-500/10 border border-blue-500/20 text-blue-500 text-[9px] font-black uppercase">Persistence Layer</span>
+            <span class="px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/20 text-purple-500 text-[9px] font-black uppercase">JPA/Hibernate</span>
+          </div>
+        </div>
+      </div>
 
-  <script src="theme.js"></script>
+      <div class="px-2">
+        <p class="text-slate-400 text-sm leading-relaxed mb-8">
+          An enterprise-grade modular backend for library orchestration focused on <span class="text-white font-semibold">Clean Architecture</span>, SQL optimization, and RBAC security implementation.
+        </p>
+        <div class="flex items-center justify-between border-t border-slate-800 pt-6">
+          <div class="flex gap-4">
+            <i class="fa-solid fa-server text-xl text-slate-600 group-hover:text-white transition-colors"></i>
+            <i class="fa-solid fa-database text-xl text-slate-600 group-hover:text-blue-400 transition-colors"></i>
+          </div>
+          <a href="https://github.com/udnfahim/Library-Management-System---LMS" target="_blank" rel="noreferrer" class="text-[10px] font-black uppercase tracking-widest text-blue-500 flex items-center gap-2 hover:text-white transition-all">
+            View Core <i class="fas fa-arrow-right text-[8px]"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal group relative flex flex-col lg:col-span-2">
+      <div class="p-12 rounded-2xl border border-dashed border-slate-800 bg-slate-900/10 flex flex-col items-center justify-center text-center">
+        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center mb-6 text-slate-500 group-hover:bg-blue-600/20 group-hover:text-blue-500 transition-all">
+          <i class="fas fa-microchip text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-black text-white uppercase tracking-tighter mb-2">Microservices Orchestrator</h3>
+        <p class="text-slate-500 text-sm max-w-md">
+          Upcoming deployment: Implementing a distributed banking API with Spring Cloud, Docker containerization, and RabbitMQ messaging.
+        </p>
+        <div class="mt-8 flex gap-4">
+          <span class="text-[9px] font-black text-slate-700 uppercase tracking-widest">In Development</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
 </body>
 </html>

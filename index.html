@@ -1,139 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="antialiased scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Fahim Uddin | System_Protocol v2.0.0</title>
+  <meta name="description" content="Production-ready software solutions and advanced system architecture by Fahim Uddin.">
+  <meta name="theme-color" content="#020617">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css">
 
-  <link rel="stylesheet" href="styles.css">
-  <title>Home | Fahim Uddin</title>
+  <script src="js/layout.js" defer></script>
+  <script src="js/engine.js" defer></script>
 </head>
-<body>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="left"><a href="index.html">Fahim Uddin</a></div>
-    <div class="right">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="testimony.html">Testimonials</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-      <button id="theme-toggle">🌙</button>
-    </div>
-  </nav>
+<body class="bg-slate-950 text-slate-300 selection:bg-blue-500/30 overflow-x-hidden">
 
-  <!-- HERO SECTION -->
-  <section class="hero-section">
-    <div class="text">
-      <h2>Hi, I'm Fahim</h2>
-      <h3>Coding sagas, chasing curiosity, dreaming in logic.</h3>
+<main class="relative z-10 max-w-7xl mx-auto px-6 pt-32 lg:pt-48">
 
-      <!-- Resume Download -->
-      <div class="hero-links">
-        <div class="link-box resume-box">
-          <a href="assets/Fahim_Uddin_Resume.pdf" download><i class="fas fa-file-download"></i> Download CV</a>
+  <section class="grid lg:grid-cols-2 gap-12 items-center mb-32 min-h-[60vh]">
+    <div class="reveal">
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full mb-6 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+        <span class="text-[9px] font-black uppercase tracking-widest text-blue-400">System Online // v2.0.0</span>
+      </div>
+
+      <h1 class="text-6xl md:text-8xl font-black tracking-tighter text-white uppercase leading-[0.85] mb-8">
+        Coding <br/>
+        <span class="text-glow italic text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-400">Sagas.</span>
+      </h1>
+
+      <p class="text-lg text-slate-400 max-w-lg mb-10 leading-relaxed border-l-2 border-slate-800 pl-6">
+        Chasing curiosity, dreaming in logic, and architecting production-ready software solutions for the modern web.
+      </p>
+
+      <div class="flex flex-wrap gap-4 mb-12">
+        <a href="assets/Fahim_Uddin_Resume.pdf" download class="btn-primary !px-8 flex items-center gap-2">
+          <i class="fas fa-file-download text-sm"></i>
+          <span>Export_CV</span>
+        </a>
+        <div class="flex gap-2">
+          <a href="https://github.com/udnfahim" target="_blank" rel="noreferrer" aria-label="GitHub Profile" class="w-12 h-12 flex items-center justify-center bg-slate-900 border border-slate-800 rounded-xl hover:border-blue-500/50 hover:text-blue-400 transition-all">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/uddnfahim" target="_blank" rel="noreferrer" aria-label="LinkedIn Profile" class="w-12 h-12 flex items-center justify-center bg-slate-900 border border-slate-800 rounded-xl hover:border-blue-500/50 hover:text-blue-400 transition-all">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:udnfahim@gmail.com" aria-label="Email Contact" class="w-12 h-12 flex items-center justify-center bg-slate-900 border border-slate-800 rounded-xl hover:border-blue-500/50 hover:text-blue-400 transition-all">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
       </div>
-
-      <!-- Social Links -->
-      <div class="hero-links">
-        <div class="link-box"><a href="https://github.com/udnfahim" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
-        <div class="link-box"><a href="https://linkedin.com/in/uddnfahim" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></div>
-        <div class="link-box"><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></div>
-        <div class="link-box"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></div>
-        <div class="link-box"><a href="mailto:udnfahim@gmail.com"><i class="fas fa-envelope"></i> Email</a></div>
-      </div>
     </div>
 
-    <div class="headshot">
-      <img src="assets/fahim.jpg" alt="Fahim Uddin">
+    <div class="reveal hidden lg:block relative">
+      <div class="absolute -inset-4 bg-blue-500/10 blur-3xl rounded-full animate-pulse"></div>
+      <div class="relative glass-card !p-0 rounded-3xl overflow-hidden border border-slate-800 aspect-square max-w-md ml-auto shadow-2xl">
+        <img src="assets/fahim.jpg" alt="Fahim Uddin Profile" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+      </div>
     </div>
   </section>
 
-  <!-- PHILOSOPHY SECTION -->
-  <section class="philosophy-section">
-    <blockquote class="philosophy-quote">
-      <h3>"He who knows where he comes from knows where to go."</h3>
-      <span class="author">— Fahim Uddin</span>
-    </blockquote>
-    
-  </section>
+  <div class="grid md:grid-cols-3 gap-6 mb-32 items-stretch">
 
-  <!-- LINKS / BLOGS SECTION -->
-  <section class="links-section">
-    <h2>Quick Links & Insights</h2>
-    <div class="links-boxes">
-      <div class="link-box">
-        <a href="https://medium.com/@udnfahim/lists" target="_blank"><i class="fab fa-medium"></i> My Blog</a>
+    <div class="reveal glass-card group flex h-full flex-col border border-slate-800 p-8 hover:border-blue-500/30">
+      <div class="mb-8 flex items-center gap-3">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10 text-blue-400 transition-all duration-500 group-hover:scale-105 group-hover:border-blue-500/40">
+          <i class="fas fa-terminal text-sm"></i>
+        </div>
+        <h3 class="text-[10px] font-black text-blue-500 uppercase tracking-[0.3em]">
+          Competitive_Programming
+        </h3>
       </div>
-      <div class="link-box">
-        <a href="https://stackoverflow.com/questions" target="_blank"><i class="fas fa-brain"></i> Programming Resources</a>
-      </div>
-      <div class="link-box">
-        <a href="https://codeforces.com/gyms" target="_blank"><i class="fas fa-laptop-code"></i> Codeforces</a>
-      </div>
-      <div class="link-box">
-        <a href="https://www.ted.com/talks" target="_blank"><i class="fas fa-lightbulb"></i> Motivations & Talks</a>
-      </div>
-      <div class="link-box">
-        <a href="https://www.wikipedia.org/" target="_blank"><i class="fas fa-book"></i> Knowledge Base</a>
+      <div class="mt-auto space-y-3">
+        <a href="https://codeforces.com/profile/udnfahim" target="_blank" rel="noreferrer" class="group/link flex items-center justify-between rounded-xl border border-slate-800 bg-slate-900/30 px-4 py-3 text-xs transition-all hover:border-blue-500/30 hover:text-white">
+          <span>Codeforces</span>
+          <i class="fas fa-arrow-right-long text-[10px] text-slate-800 group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-all"></i>
+        </a>
+        <a href="https://leetcode.com/udnfahim/" target="_blank" rel="noreferrer" class="group/link flex items-center justify-between rounded-xl border border-slate-800 bg-slate-900/30 px-4 py-3 text-xs transition-all hover:border-blue-500/30 hover:text-white">
+          <span>LeetCode</span>
+          <i class="fas fa-arrow-right-long text-[10px] text-slate-800 group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-all"></i>
+        </a>
+        <a href="https://www.codechef.com/users/udnfahim" target="_blank" rel="noreferrer" class="group/link flex items-center justify-between rounded-xl border border-slate-800 bg-slate-900/30 px-4 py-3 text-xs transition-all hover:border-blue-500/30 hover:text-white">
+          <span>CodeChef</span>
+          <i class="fas fa-arrow-right-long text-[10px] text-slate-800 group-hover/link:text-blue-500 group-hover/link:translate-x-1 transition-all"></i>
+        </a>
       </div>
     </div>
-  </section>
-  
-<!-- COMPETITIVE PROGRAMMING SECTION -->
-<section class="cp-section">
-  <h2>Competitive Programming Profiles</h2>
-  <div class="cp-links">
-    <div class="cp-box">
-      <a href="https://codeforces.com/profile/udnfahim" target="_blank">
-        <i class="fas fa-bolt"></i> Codeforces
-      </a>
+
+    <div class="reveal glass-card group flex h-full flex-col border border-slate-800 p-8 hover:border-indigo-500/30">
+      <div class="mb-8 flex items-center gap-3">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl border border-indigo-500/20 bg-indigo-500/10 text-indigo-400 transition-all duration-500 group-hover:scale-105 group-hover:border-indigo-500/40">
+          <i class="fas fa-network-wired text-sm"></i>
+        </div>
+        <h3 class="text-[10px] font-black text-indigo-400 uppercase tracking-[0.3em]">
+          Intelligence_Nodes
+        </h3>
+      </div>
+      <div class="mt-auto space-y-3">
+        <a href="https://medium.com/@udnfahim/lists" target="_blank" rel="noreferrer" class="group/link flex items-center justify-between rounded-xl border border-slate-800 bg-slate-900/30 px-4 py-3 text-xs transition-all hover:border-indigo-500/30 hover:text-white">
+          <span>Technical Writing</span>
+          <i class="fas fa-arrow-right-long text-[10px] text-slate-800 group-hover/link:text-indigo-400 group-hover/link:translate-x-1 transition-all"></i>
+        </a>
+        <a href="https://stackoverflow.com/users/22995393/fahim-uddin" target="_blank" rel="noreferrer" class="group/link flex items-center justify-between rounded-xl border border-slate-800 bg-slate-900/30 px-4 py-3 text-xs transition-all hover:border-indigo-500/30 hover:text-white">
+          <span>StackOverflow</span>
+          <i class="fas fa-arrow-right-long text-[10px] text-slate-800 group-hover/link:text-indigo-400 group-hover/link:translate-x-1 transition-all"></i>
+        </a>
+        <a href="https://github.com/udnfahim?tab=repositories" target="_blank" rel="noreferrer" class="group/link flex items-center justify-between rounded-xl border border-slate-800 bg-slate-900/30 px-4 py-3 text-xs transition-all hover:border-indigo-500/30 hover:text-white">
+          <span>Open Source</span>
+          <i class="fas fa-arrow-right-long text-[10px] text-slate-800 group-hover/link:text-indigo-400 group-hover/link:translate-x-1 transition-all"></i>
+        </a>
+      </div>
     </div>
-    <div class="cp-box">
-      <a href="https://www.codechef.com/users/udnfahim" target="_blank">
-        <i class="fas fa-utensils"></i> CodeChef
-      </a>
-    </div>
-    <div class="cp-box">
-      <a href="https://leetcode.com/udnfahim/" target="_blank">
-        <i class="fas fa-code"></i> LeetCode
-      </a>
-    </div>
-    <div class="cp-box">
-      <a href="https://atcoder.jp/users/udnfahim" target="_blank">
-        <i class="fas fa-chess-knight"></i> AtCoder
-      </a>
+
+    <div class="reveal glass-card group relative flex h-full flex-col overflow-hidden border border-blue-500/20 !bg-blue-600/5 p-8">
+      <i class="fas fa-quote-right absolute right-5 top-5 text-4xl text-blue-500/10 transition-transform group-hover:scale-110"></i>
+      <div class="mb-8 flex items-center gap-3">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10 text-blue-400">
+          <i class="fas fa-lightbulb text-sm"></i>
+        </div>
+        <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em]">Core_Philosophy</h3>
+      </div>
+      <p class="mt-auto text-base italic leading-relaxed text-slate-200">
+        "He who knows where he comes from knows where to go."
+      </p>
+      <p class="mt-5 text-[9px] font-bold uppercase tracking-widest text-blue-500">— Fahim Uddin</p>
     </div>
   </div>
-</section>
+</main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-left">
-      <a href="index.html" class="footer-logo">&lt;Fahim /&gt;</a>
-    </div>
-    <div class="footer-center">
-      <p>Copyright © 2025 Fahim Uddin</p>
-      <p>Email: <a href="mailto:udnfahim@gmail.com">udnfahim@gmail.com</a></p>
-    </div>
-    <div class="footer-right">
-      <a href="https://github.com/udnfahim" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/uddnfahim" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </footer>
-
-  <script src="theme.js"></script>
 </body>
 </html>

@@ -1,65 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="antialiased scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahim Uddin | System_Protocol v2.0.0</title>
 
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <link rel="stylesheet" href="css/styles.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <title>Resume | Fahim Uddin</title>
-  <link rel="stylesheet" href="styles.css">
+  <script src="js/layout.js" defer></script>
+  <script src="js/engine.js" defer></script>
 </head>
-<body>
-  <nav>
-    <div class="left"><a href="index.html">Fahim Uddin</a></div>
-    <div class="right">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="testimony.html">Testimonials</a>
-      <a href="resume.html" class="active">Resume</a>
-      <a href="contact.html">Contact</a>
-      <button id="theme-toggle">🌙</button>
-    </div>
-  </nav>
+<body class="bg-slate-950 text-slate-300 selection:bg-blue-500/30 overflow-x-hidden font-sans">
 
-  <section class="resume-section">
-    <h2>Resume & CV</h2>
-    <p class="resume-intro">
-        Explore my professional journey, skills, and achievements. You can download my full resume below.
-    </p>
-    <div class="resume-card">
-        <img src="assets/resume-preview.jpg" alt="Resume Preview">
-        <div class="resume-details">
-            <h3>Fahim Uddin</h3>
-            <p>Computer Science & Engineering | Full-Stack Developer</p>
-            <a href="assets/Fahim_Uddin_Resume.pdf" download class="resume-btn">Download Resume</a>
+<main class="relative z-10 max-w-7xl mx-auto px-6 pt-32 lg:pt-48 pb-32">
+
+  <header class="reveal mb-24">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-12">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-3 px-3 py-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 backdrop-blur-md mb-8">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+          </span>
+          <span class="text-[10px] font-black uppercase tracking-[0.4em] text-blue-400">Production Build v2.0.0 | 2026</span>
         </div>
-    </div>
-</section>
 
-    <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-left">
-      <a href="index.html" class="footer-logo">&lt;Fahim /&gt;</a>
-    </div>
-    <div class="footer-center">
-      <p>Copyright © 2025 Fahim Uddin</p>
-      <p>Email: <a href="mailto:udnfahim@gmail.com">udnfahim@gmail.com</a></p>
-    </div>
-    <div class="footer-right">
-      <a href="https://github.com/udnfahim" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/uddnfahim" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </footer>
+        <h1 class="text-6xl md:text-8xl font-black tracking-tighter uppercase mb-8 leading-[0.85] text-white">
+          Professional <br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-400 to-blue-600 italic text-glow-blue">History.</span>
+        </h1>
 
-  <script src="theme.js"></script>
+        <p class="text-xl text-slate-400 border-l-2 border-blue-600/50 pl-6 leading-relaxed">
+          A compilation of technical competencies, academic milestones, and competitive programming achievements extracted from the core system registry.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 w-full lg:w-80">
+        <div class="p-4 border border-slate-800 bg-slate-900/40 rounded-xl">
+          <p class="text-[8px] font-black text-slate-500 uppercase mb-1 tracking-widest">Clearance</p>
+          <p class="text-sm font-bold text-white uppercase">Sr. Architect</p>
+        </div>
+        <div class="p-4 border border-slate-800 bg-slate-900/40 rounded-xl">
+          <p class="text-[8px] font-black text-slate-500 uppercase mb-1 tracking-widest">Specialization</p>
+          <p class="text-sm font-bold text-white uppercase text-blue-500">Backend</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+
+    <div class="reveal lg:col-span-5 relative group">
+      <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+
+      <div class="glass-card relative aspect-[1/1.41] !p-0 overflow-hidden rounded-2xl border-slate-800 group-hover:border-blue-500/50 transition-all duration-500 shadow-2xl">
+        <div class="scanline absolute inset-0 z-10 opacity-20 group-hover:opacity-40 transition-opacity"></div>
+        <img src="assets/resume-preview.jpg" alt="Fahim Uddin Resume" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100">
+
+        <div class="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity z-20 flex items-center justify-center">
+          <div class="px-6 py-3 bg-white text-slate-950 font-black text-[10px] uppercase tracking-widest rounded-lg shadow-xl translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            Open Manifest
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal lg:col-span-7 space-y-12">
+
+      <div class="space-y-4">
+        <div class="flex items-center gap-6">
+          <h3 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter italic">Fahim Uddin</h3>
+          <span class="h-[2px] flex-grow bg-gradient-to-r from-blue-600 to-transparent"></span>
+        </div>
+        <p class="text-blue-500 font-mono text-sm uppercase tracking-[0.5em] font-black">Backend Architecture Specialist</p>
+      </div>
+
+      <div class="grid gap-8">
+        <div class="flex items-start gap-6 group p-6 rounded-2xl border border-slate-900 bg-slate-900/20 hover:border-blue-500/30 hover:bg-slate-900/40 transition-all">
+          <div class="mt-1 w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-lg">
+            <i class="fas fa-microchip text-xl"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-black uppercase text-xs tracking-widest mb-2">Technical Core</h4>
+            <p class="text-sm leading-relaxed text-slate-400">
+              Specialized in <span class="text-white">Spring Boot</span> and <span class="text-white">RESTful API Design</span>. Expert in implementing secure authentication via <span class="text-blue-400">JWT & RBAC</span> protocols.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-6 group p-6 rounded-2xl border border-slate-900 bg-slate-900/20 hover:border-indigo-500/30 hover:bg-slate-900/40 transition-all">
+          <div class="mt-1 w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-500 group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-lg">
+            <i class="fas fa-code-branch text-xl"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-black uppercase text-xs tracking-widest mb-2">Algorithmics</h4>
+            <p class="text-sm leading-relaxed text-slate-400">
+              Two-time <span class="text-white">ICPC Regional Participant</span> (2024, 2025). Highly proficient in complex data structures and O-notation complexity analysis.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-6 group p-6 rounded-2xl border border-slate-900 bg-slate-900/20 hover:border-emerald-500/30 hover:bg-slate-900/40 transition-all">
+          <div class="mt-1 w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-600 group-hover:text-white transition-all shadow-lg">
+            <i class="fas fa-database text-xl"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-black uppercase text-xs tracking-widest mb-2">Persistence Layer</h4>
+            <p class="text-sm leading-relaxed text-slate-400">
+              Advanced knowledge of <span class="text-white">MySQL & JPA/Hibernate</span>, focusing on query optimization and normalized schema design for enterprise scale.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row gap-4">
+        <a href="assets/Fahim_Uddin_Resume.pdf" download class="relative overflow-hidden group px-10 py-5 bg-white text-slate-950 rounded-xl font-black text-[11px] uppercase tracking-widest transition-all hover:bg-blue-600 hover:text-white text-center shadow-xl shadow-white/5">
+          <span class="relative z-10 flex items-center justify-center gap-3">
+            <i class="fas fa-download text-xs"></i> Export_Manifest.pdf
+          </span>
+        </a>
+
+        <a href="https://linkedin.com/in/uddnfahim" target="_blank" rel="noreferrer" class="px-10 py-5 bg-slate-900 border border-slate-800 text-slate-400 rounded-xl font-black text-[11px] uppercase tracking-widest hover:border-blue-500 hover:text-white transition-all text-center">
+          External_Verify
+        </a>
+      </div>
+
+      <div class="pt-12 grid grid-cols-2 sm:grid-cols-3 gap-8 border-t border-slate-900">
+        <div>
+          <p class="text-[9px] font-black text-slate-600 uppercase tracking-widest mb-2">Integrity Hash</p>
+          <p class="text-xs font-mono text-slate-500 italic">SHA-256 Verified</p>
+        </div>
+        <div>
+          <p class="text-[9px] font-black text-slate-600 uppercase tracking-widest mb-2">Build ID</p>
+          <p class="text-xs font-mono text-slate-500">v2.0.0-STABLE</p>
+        </div>
+        <div>
+          <p class="text-[9px] font-black text-slate-600 uppercase tracking-widest mb-2">Status</p>
+          <p class="text-xs font-mono text-emerald-500 flex items-center gap-2">
+            <span class="animate-pulse w-2 h-2 rounded-full bg-emerald-500"></span> Production_Ready
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
 </body>
 </html>

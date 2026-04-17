@@ -1,81 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="antialiased scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <title>About | Fahim Uddin</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahim Uddin | System_Protocol v2.0.0</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
 
-  <link rel="stylesheet" href="styles.css">
+    <script src="js/layout.js" defer></script>
+    <script src="js/engine.js" defer></script>
 </head>
-<body>
-  <nav>
-    <div class="left"><a href="index.html">Fahim Uddin</a></div>
-    <div class="right">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="testimony.html">Testimonials</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-      <button id="theme-toggle">🌙</button>
-    </div>
-  </nav>
+<body class="bg-slate-950 text-slate-300 selection:bg-blue-500/30 overflow-x-hidden">
 
-  <section>
-  <h2>About Me</h2>
+<main class="relative z-10 max-w-4xl mx-auto px-6 pt-32 lg:pt-48 pb-32">
 
-  <p>
-    Hi, I’m Fahim — a Computer Science and Engineering student who treats coding like chronicling history: every project has a story, every bug a twist, and every feature a revelation. 
-    I don’t just write code; I trace its essence. I ask “why?” until I understand not only how something works, but why it exists that way. 
-    I don’t sleep well until a project is fully complete, every bug vanquished, every feature polished — sometimes unfinished problems even nudge me in my dreams, new features appear, and solutions reveal themselves in ways only my subconscious could imagine.
-  </p>
+    <section class="reveal mb-24">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 backdrop-blur-sm mb-8 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
+            <span class="relative flex h-1.5 w-1.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-blue-500"></span>
+            </span>
+            <span class="text-[9px] font-black uppercase tracking-widest text-blue-400">Core Architecture Module // v2.0.0</span>
+        </div>
 
-  <p>
-    Beyond code, I’m endlessly curious about the world and the universe. 
-    I love exploring space, pondering the mysteries of physics, and tracing the connections between the cosmos and the logic that governs it. 
-    History, human behavior, and patterns of thought fascinate me, and I enjoy observing, analyzing, and reflecting — often alone, intentionally, because solitude is when my mind thrives. 
-    Travel excites me, even if I haven’t officially embarked on many journeys yet; I imagine every adventure as a story waiting to be lived.
-  </p>
+        <h1 class="text-5xl md:text-7xl font-black tracking-tighter uppercase mb-10 leading-[0.9]">
+            <span class="text-white">Logic Meets</span> <br/>
+            <span class="text-glow text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-400 italic">Curiosity.</span>
+        </h1>
 
-  <p>
-    I value ideas, persistence, and yes — money too. 
-    I believe in building something meaningful, seeing it through to completion, and enjoying both the process and the outcome. 
-    I build systems where logic meets creativity, precision meets curiosity, and work meets just enough chaos to keep it interesting. 
-    Life, like code, is best approached with focus, purpose, and just the right touch of humor — because even in logic, there’s always room to laugh.
-  </p>
+        <div class="space-y-6 text-lg leading-relaxed text-slate-400 max-w-3xl border-l-2 border-slate-800 pl-6">
+            <p>
+                I approach software engineering as an exercise in <span class="text-white font-medium">Applied History</span>. Every system has a lineage; every bug is a puzzle rooted in logic waiting to be solved. My focus isn't just on writing syntax, but on understanding the <span class="text-blue-400 italic">why</span>.
+            </p>
+            <p>
+                I specialize in backend systems where precision is mandatory. My background in <span class="text-white font-medium">Competitive Programming</span> has conditioned me to view code through the lens of efficiency. Whether it's securing <span class="text-blue-400">Sthaniyo</span> or designing enterprise data schemas, I aim for production-grade reliability.
+            </p>
+        </div>
+    </section>
 
-  <h2>Personal Interests</h2>
-  <p>
-  I spend my time watching movies, enjoying good food, relaxing and thinking (sometimes overthinking), catching up on sleep, occasionally laughing at my own code errors, and dreaming of making money in a snap.
-  </p>
-</section>
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-24 items-stretch">
+        <div class="reveal glass-card group flex h-full flex-col border border-slate-800 p-8">
+            <div class="mb-6 flex items-center gap-4">
+                <div class="flex h-11 w-11 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10 text-blue-400 transition-all duration-500 group-hover:scale-105 group-hover:rotate-6">
+                    <i class="fas fa-microchip text-sm"></i>
+                </div>
+                <h3 class="text-[10px] font-black text-blue-400 uppercase tracking-widest">Internal Processing</h3>
+            </div>
+            <p class="mt-auto text-sm leading-relaxed text-slate-400 transition-colors group-hover:text-slate-200">
+                I thrive in intentional solitude. It is in these moments of observation and analysis that my best solutions emerge. Complex system bottlenecks reveal themselves clearly in the quiet moments of reflection.
+            </p>
+        </div>
 
+        <div class="reveal glass-card group flex h-full flex-col border border-slate-800 p-8">
+            <div class="mb-6 flex items-center gap-4">
+                <div class="flex h-11 w-11 items-center justify-center rounded-xl border border-emerald-500/20 bg-emerald-500/10 text-emerald-400 transition-all duration-500 group-hover:scale-105">
+                    <i class="fas fa-satellite text-sm"></i>
+                </div>
+                <h3 class="text-[10px] font-black text-emerald-400 uppercase tracking-widest">External Curiosity</h3>
+            </div>
+            <p class="mt-auto text-sm leading-relaxed text-slate-400 transition-colors group-hover:text-slate-200">
+                Beyond the terminal, I am fascinated by the macro-scales of the universe. I view the cosmos and high-performance system topologies as mirrors of the same governing logic.
+            </p>
+        </div>
+    </section>
 
+    <section class="reveal border-t border-slate-900 pt-16">
+        <div class="flex items-center gap-4 mb-12">
+            <div class="h-[1px] flex-1 bg-gradient-to-r from-slate-800 to-transparent"></div>
+            <h2 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.4em]">Personal_Runtime_Interests</h2>
+            <div class="h-[1px] flex-1 bg-gradient-to-l from-slate-800 to-transparent"></div>
+        </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-left">
-      <a href="index.html" class="footer-logo">&lt;Fahim /&gt;</a>
-    </div>
-    <div class="footer-center">
-      <p>Copyright © 2025 Fahim Uddin</p>
-      <p>Email: <a href="mailto:udnfahim@gmail.com">udnfahim@gmail.com</a></p>
-    </div>
-    <div class="footer-right">
-      <a href="https://github.com/udnfahim" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/uddnfahim" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </footer>
+        <div class="flex flex-wrap justify-center gap-4">
+            <span class="status-badge px-6 py-3 bg-slate-900/50 hover:border-blue-500/50 cursor-default transition-all">
+                <i class="fas fa-film text-blue-500"></i> Cinema
+            </span>
+            <span class="status-badge px-6 py-3 bg-slate-900/50 hover:border-amber-500/50 cursor-default transition-all">
+                <i class="fas fa-utensils text-amber-500"></i> Gastronomy
+            </span>
+            <span class="status-badge px-6 py-3 bg-slate-900/50 hover:border-emerald-500/50 cursor-default transition-all">
+                <i class="fas fa-plane text-emerald-500"></i> Exploration
+            </span>
+            <span class="status-badge px-6 py-3 bg-slate-900/50 hover:border-indigo-500/50 cursor-default transition-all">
+                <i class="fas fa-moon text-indigo-500"></i> Deep Thought
+            </span>
+        </div>
+    </section>
+</main>
 
-  <script src="theme.js"></script>
 </body>
 </html>
