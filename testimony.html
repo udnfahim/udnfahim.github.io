@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fahim Uddin | System_Protocol v2.0.0</title>
+  <title>Fahim Uddin | System_Protocol</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -162,7 +162,7 @@
 </main>
 
 <script>
-  const registryKey = 'portfolio_registry_v2_0_0';
+  const registryKey = 'portfolio_registry';
   const form = document.getElementById('registry-form');
   const alertBox = document.getElementById('status-alert');
 
@@ -177,7 +177,6 @@
 
     const logs = JSON.parse(localStorage.getItem(registryKey) || '[]');
     logs.push(entry);
-    // Versioned storage isolates v2.0.0 testimony payloads from legacy data shapes.
     localStorage.setItem(registryKey, JSON.stringify(logs));
 
     form.reset();

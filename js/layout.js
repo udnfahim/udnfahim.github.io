@@ -1,11 +1,10 @@
-/* --- SYSTEM_NODE: LAYOUT_ENGINE v2.0.0 --- */
+/* --- SYSTEM_NODE: LAYOUT_ENGINE --- */
 
 const Layout = {
     metadata: {
-        version: "v2.0.0",
-        title: "Fahim Uddin | System_Protocol v2.0.0",
-        subtitle: "Legacy Protocol v2.0.0 | Production Stable",
-        status: "Production Stable"
+        title: "Fahim Uddin | System_Protocol",
+        subtitle: "Legacy Protocol",
+        status: "Active"
     },
 
     navItems: [
@@ -171,7 +170,6 @@ const Layout = {
     },
 
     injectFooter() {
-        const year = new Date().getFullYear();
         const footer = document.createElement("footer");
         footer.className = "relative z-10 mt-40 border-t border-slate-900/80 bg-slate-950 py-24";
         footer.innerHTML = `
@@ -204,8 +202,7 @@ const Layout = {
                     <div class="md:text-right">
                         <span class="mb-6 block text-[10px] font-black uppercase tracking-[0.4em] text-slate-700">System Metadata</span>
                         <p class="text-[9px] font-mono uppercase tracking-[0.2em] text-slate-500 leading-loose">
-                            © 2024-${year} FAHIM UDDIN<br>
-                            BUILD: [${this.metadata.version}]<br>
+                            © FAHIM UDDIN<br>
                             PROFILE: [SYSTEM_PROTOCOL]
                         </p>
                     </div>

@@ -1,4 +1,4 @@
-/* --- SYSTEM_NODE: INTERACTION_ENGINE v2.0.0 --- */
+/* --- SYSTEM_NODE: INTERACTION_ENGINE --- */
 
 const MainEngine = {
     init() {
@@ -24,7 +24,6 @@ const MainEngine = {
         });
 
         document.querySelectorAll(".reveal").forEach((element, index) => {
-            // Versioned stagger timing keeps motion deterministic across pages while avoiding per-page inline overrides.
             element.style.setProperty("--reveal-delay", `${(index % 5) * 150}ms`);
 
             if (element instanceof HTMLElement) {
